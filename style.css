@@ -93,3 +93,62 @@ nav ul li a:hover {
     background-color: white;
     color: black;
 }
+/* ヒーロー：地方の美術館イメージ（温かい色合いのイラスト風写真） */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+                url('https://images.unsplash.com/photo-1561839561-b13bcfe95249?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex; justify-content: center; align-items: center; text-align: center; color: white;
+}
+
+/* 部屋の看板 */
+.room-sign {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #443e30;
+    background: #e8e2d5;
+    padding: 20px 60px;
+    display: inline-block;
+    border: 3px double #8d7d65;
+    margin-bottom: 40px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 横スクロールコンテナ */
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 40px;
+    padding: 20px 50px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin; /* Firefox用 */
+}
+
+/* スクロールバーのデザイン */
+.scroll-container::-webkit-scrollbar { height: 8px; }
+.scroll-container::-webkit-scrollbar-thumb { background: #ccc; border-radius: 10px; }
+
+.art-card {
+    flex: 0 0 calc(33.333% - 40px); /* 3つ並ぶサイズ */
+    min-width: 300px;
+    scroll-snap-align: start;
+    cursor: pointer;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.art-card img { width: 100%; height: auto; transition: 0.3s; }
+.art-card:hover img { opacity: 0.8; }
+
+/* 美術館について */
+.about-section, .shop-section { padding: 100px 50px; text-align: center; max-width: 1000px; margin: 0 auto; }
+.about-flex { display: flex; align-items: center; gap: 50px; margin-top: 30px; text-align: left; }
+.museum-img { width: 50%; border-radius: 10px; }
+
+/* 販売店 */
+.preparing { font-style: italic; color: #888; font-size: 1.5rem; margin-top: 50px; }
+
+/* モーダル等は前回コードを継承（略） */
