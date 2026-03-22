@@ -23,45 +23,89 @@
     <section class="hero">
         <div class="hero-content">
             <h1>徳永ミニプティ美術館</h1>
-            <p>二人の作家が紡ぐ、小さな芸術の世界</p>
+            <p>富山の静かな景色に佇む、小さな芸術の家</p>
             <a href="#takuma-room" class="enter-btn">Enter</a>
         </div>
     </section>
 
     <main>
         <section id="takuma-room" class="room-section">
-            <h2>徳永卓磨の部屋</h2>
-            <div class="gallery-grid">
-                <div class="art-card" onclick="openModal('takuma1', '作品名A', 'F10号', '2023年', 'ここに作品の解説文が入ります。')">
-                    <img src="https://picsum.photos/400/300?sig=1" alt="作品A">
-                    <p>作品名A</p>
+            <div class="room-sign">徳永卓磨の部屋</div>
+            <div class="scroll-container">
+                <div class="art-card" onclick="openModal(this, '静寂', 'F8', '2023', '富山の朝霧をイメージした作品です。')">
+                    <img src="https://picsum.photos/600/400?sig=11" alt="作品1">
+                    <p>作品1: 静寂</p>
                 </div>
-                <div class="art-card" onclick="openModal('takuma2', '作品名B', 'A4', '2024年', '静かな朝の風景を描きました。')">
-                    <img src="https://picsum.photos/400/300?sig=2" alt="作品B">
-                    <p>作品名B</p>
+                <div class="art-card" onclick="openModal(this, '立山の風', 'F10', '2024', '風の動きを感じる抽象画。')">
+                    <img src="https://picsum.photos/600/400?sig=12" alt="作品2">
+                    <p>作品2: 立山の風</p>
                 </div>
+                <div class="art-card" onclick="openModal(this, '光の粒子', 'A3', '2022', '木漏れ日を細かく描写しました。')">
+                    <img src="https://picsum.photos/600/400?sig=13" alt="作品3">
+                    <p>作品3: 光の粒子</p>
                 </div>
+                <div class="art-card" onclick="openModal(this, '影の輪郭', 'F6', '2023', '夕暮れ時のコントラスト。')">
+                    <img src="https://picsum.photos/600/400?sig=14" alt="作品4">
+                    <p>作品4: 影の輪郭</p>
+                </div>
+                <div class="art-card" onclick="openModal(this, '記憶の断片', 'F12', '2024', '過去の風景を重ね合わせた一枚。')">
+                    <img src="https://picsum.photos/600/400?sig=15" alt="作品5">
+                    <p>作品5: 記憶の断片</p>
+                </div>
+            </div>
         </section>
 
         <section id="sachiko-room" class="room-section">
-            <h2>徳永幸子の部屋</h2>
-            <div class="gallery-grid">
-                <div class="art-card" onclick="openModal('sachiko1', '色彩の記憶', 'SMサイズ', '2022年', '花びらの重なりを表現しました。')">
-                    <img src="https://picsum.photos/400/300?sig=6" alt="色彩の記憶">
-                    <p>色彩の記憶</p>
+            <div class="room-sign">徳永幸子の部屋</div>
+            <div class="scroll-container">
+                <div class="art-card" onclick="openModal(this, '春のささやき', 'SM', '2023', '庭に咲く小さな花々の対話。')">
+                    <img src="https://picsum.photos/600/400?sig=21" alt="作品1">
+                    <p>作品1: 春のささやき</p>
                 </div>
+                <div class="art-card" onclick="openModal(this, '午後の紅茶', 'F4', '2024', '穏やかな日常のひととき。')">
+                    <img src="https://picsum.photos/600/400?sig=22" alt="作品2">
+                    <p>作品2: 午後の紅茶</p>
                 </div>
+                <div class="art-card" onclick="openModal(this, '彩りの庭', 'F8', '2022', '四季折々の色彩を一枚に。')">
+                    <img src="https://picsum.photos/600/400?sig=23" alt="作品3">
+                    <p>作品3: 彩りの庭</p>
+                </div>
+                <div class="art-card" onclick="openModal(this, '月夜の散歩', 'A4', '2023', '青い月光に照らされた道。')">
+                    <img src="https://picsum.photos/600/400?sig=24" alt="作品4">
+                    <p>作品4: 月夜の散歩</p>
+                </div>
+                <div class="art-card" onclick="openModal(this, '夢のつづき', 'F10', '2024', '幻想的な色使いの作品。')">
+                    <img src="https://picsum.photos/600/400?sig=25" alt="作品5">
+                    <p>作品5: 夢のつづき</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>美術館について</h2>
+            <div class="about-flex">
+                <img src="https://images.unsplash.com/photo-1518998053502-51dd52410ad5?auto=format&fit=crop&w=800&q=80" alt="美術館の外観" class="museum-img">
+                <div class="about-text">
+                    <p><strong>所在地：</strong>富山県某所、立山連峰を望む静かな丘の上</p>
+                    <p><strong>所蔵点数：</strong>約150点（常設展示30点）</p>
+                    <p>富山の豊かな自然に囲まれた「徳永ミニプティ美術館」は、日常の喧騒を忘れ、個人の邸宅を訪れたような親密な空間で芸術を楽しんでいただくための私設美術館です。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="shop-section">
+            <h2>販売店</h2>
+            <p class="preparing">現在準備中です</p>
         </section>
     </main>
 
     <div id="artModal" class="modal" onclick="closeModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <span class="close">&times;</span>
-            <img id="modalImg" src="" alt="">
+            <img id="modalImg" src="">
             <div class="art-details">
                 <h3 id="modalTitle"></h3>
-                <p><strong>大きさ:</strong> <span id="modalSize"></span></p>
-                <p><strong>作成年:</strong> <span id="modalYear"></span></p>
+                <p><strong>大きさ:</strong> <span id="modalSize"></span> / <strong>作成年:</strong> <span id="modalYear"></span></p>
                 <hr>
                 <p id="modalDesc"></p>
             </div>
