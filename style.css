@@ -1,0 +1,95 @@
+/* 基本設定 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* ヘッダー */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* ヒーローセクション */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?auto=format&fit=crop&w=1600&q=80'); /* 美術館のイメージ */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Enterボタン */
+.enter-btn {
+    display: inline-block;
+    padding: 15px 50px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.enter-btn:hover {
+    background-color: white;
+    color: black;
+}
